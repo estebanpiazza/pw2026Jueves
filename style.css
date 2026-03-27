@@ -1,0 +1,40 @@
+body{
+    background-color: green;
+}
+/* tag : body, ul, li, table, form */
+
+#colorEspecial { background-color: aqua;}
+
+.liFondo {
+    background-color: red; border: 10px dotted rgb(15, 177, 240); 
+}
+
+.espaciado{ padding:50px;}
+
+*{
+    border:1px solid yellow
+}
+li{
+    display:block;
+}
+
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-template-areas:
+    "header header"
+    "col-izq col-der"
+    "footer footer";
+}
+
+.header { grid-area: header; }
+
+.col-izq { grid-area: col-izq; }
+
+.col-der { grid-area: col-der; }
+
+.footer { grid-area: footer; }

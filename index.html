@@ -5,23 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mejor web del mundo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalice.css">
     <style>
-
-        li{display:inline}
+            /* internal */
+        li{display:inline; margin: 10px;}
     </style>
 </head>
 
 <body>
-    <header>
+    <div class="container">
+  <div class="header">
         <ul" type="none">
             <a href=""><li>home</li></a>
-            <li>nosotros</li>
+            <li style="color:red">nosotros</li><!-- css inline -->
             <li>contacto</li>
             <li>algo</li>
         </ul>
-    </header>
-    <main>
-        <marquee behavior="" direction="">
+    <header>
+</div>
+  <div class="col-izq"><marquee behavior="" direction="">
             Pocos de ustedes, estan prestando atención hoy, la mayoria esta distraido
         </marquee>
         <a href="https://google.com" target="_blank">
@@ -40,31 +43,37 @@
             Suscipit quas facere tenetur labore corporis autem incidunt, rerum quo officia aliquam doloribus accusantium
             tempora cupiditate magni expedita nesciunt explicabo iure ipsa rem nostrum animi facilis? Commodi nisi
             impedit tempora.</p>
-        <hr>
-        <ul type="circle">
+        <hr></div>
+  <div class="col-der"><ul type="circle">
             <li>HOla soy un li</li>
             <li>HOla soy un li</li>
             <li>HOla soy un li</li>
-            <li>HOla soy un li</li>
+            <li class="liFondo espaciado">HOla soy un li</li>
         </ul>
         <!-- esto es un comentario -->
         <ol start="5">
-            <li>Soy una lo que quieras ordenada</li>
-            <li>Soy una lo que quieras ordenada</li>
-            <li>Soy una lo que quieras ordenada</li>
-            <li>Soy una lo que quieras ordenada</li>
+            <li class="liFondo" id="colorEspecial">Soy una lo que quieras ordenada</li>
+            <li class="liFondo">Soy una lo que quieras ordenada</li>
+            <li class="liFondo">Soy una lo que quieras ordenada</li>
+            <li class="liFondo">Soy una lo que quieras ordenada</li>
         </ol>
-        <img src="https://placecage.lucidinternets.com/200/300" alt="Imagen de Nicolas cage">
-    </main>
-    <footer>
-        <form action="">
+        <img src="https://placecage.lucidinternets.com/200/300" alt="Imagen de Nicolas cage"></div>
+  <div class="footer"> <form action="">
         <input type="text">
         <input type="password">
         <input type="button" value="Haceme click">
         <input type="color" name="" id="">
         <input type="date" name="" id="">
         <input type="radio" name="" id="">
-        </form>
+        </form></div>
+</div>
+    
+    <main>
+        
+        
+    </main>
+    <footer>
+       
     </footer>
 
     <div id="fondo"></div>
